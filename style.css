@@ -7,6 +7,9 @@ body{
 #title{
     text-align: center;
 }
+#amp{
+    font-size: 40px;
+}
 hr { 
     background-color: white; 
     height: 2px; 
