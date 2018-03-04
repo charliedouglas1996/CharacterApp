@@ -1,14 +1,16 @@
 body{
-    background-color: rgb(123, 2, 194);
+    background-color:white;
     padding:0px;
     margin:0px;
     color:white;
 }
 #title{
     text-align: center;
+    color: rgb(123, 2, 194);
 }
 #amp{
     font-size: 40px;
+    color: red;
 }
 hr { 
     background-color: white; 
