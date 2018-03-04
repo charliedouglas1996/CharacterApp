@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Character Creator</title>
+    <link href="https://fonts.googleapis.com/css?family=Acme|Vidaloka" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body id="hotbod" style="font-family:'Acme'">
+    <h1 id="title">Welcome to my Dungeons &amp; Dragons character creator!</h1>
+    <hr>
+    <div class="flex-container">
+      <div class="form flex-box">
+        <h3>Creator:</h3>
+        <form id="creation" method="POST" action="">
+          <ol>
+            <li>
+              Race: <br>
+              <select id="races">
+                <option disabled selected value></option>   
+                <option value="dragonborn">Dragonborn</option>     
+                <option value="dwarf">Dwarf</option>
+                <option value="elf">Elf</option>
+                <option value="gnome">Gnome</option>
+                <option value="halfling">Halfling</option>
+                <option value="half-elf">Half-Elf</option>
+                <option value="half-orc">Half-Orc</option>
+                <option value="human">Human</option>
+                <option value="tiefling">Tiefling</option>
+              </select><br><br>
+            </li>
+            <li>
+              Class: <br>
+              <select id="classes">     
+                <option disabled selected value></option>        
+                <option value="barbarian">Barbarian</option>
+                <option value="bard">Bard</option>
+                <option value="cleric">Cleric</option>
+                <option value="druid">Druid</option>
+                <option value="fighter">Fighter</option>
+                <option value="monk">Monk</option>
+                <option value="paladin">Paladin</option>
+                <option value="ranger">Ranger</option>
+                <option value="rogue">Rogue</option>
+                <option value="sorcerer">Sorcerer</option>
+                <option value="warlock">Warlock</option>
+                <option value="wizard">Wizard</option>
+              </select><br><br>
+            </li>
+            <li>
+              Gender:<br> 
+              <label><input type="radio" name="gender" value="she">Female</label>
+              <label><input type="radio" name="gender" value="he">Male</label>
+              <label><input type="radio" name="gender" value="they">Other</label><br><br>
+            </li>   
+            <li>
+              Name: <br>
+              <input id="Cname"type="text" name="Cname"/> <br><br>
+            </li>   
+            <li>
+              Alignment: <br>
+              <select id="alignments">     
+                <option disabled selected value></option>        
+                <option value="lawfulg">Lawful Good</option>
+                <option value="lawfuln">Lawful Neutral</option>
+                <option value="lawfule">Lawful Evil</option>
+                <option value="neutralg">Neutral Good</option>
+                <option value="neutraln">Neutral </option>
+                <option value="neutrale">Neutral Evil</option>
+                <option value="chaoticg">Chaotic Good</option>
+                <option value="chaoticn">Chaotic Neutral</option>
+                <option value="chaotice">Chaotic Evil</option>
+                </select><br><br>
+            </li>
+            <li>
+              Age: <br>
+              <input id="Cage"type="number" min="0" step="1" name="Cage"/><br><br>
+            </li>
+            <li>
+              Languages:
+              <table border="0">
+                <tr>
+                  <td><label><input class="languages"type="checkbox" name="language" value="common">Common</label></td>
+                  <td><label><input class="languages"type="checkbox" name="language" value="dwarvish">Dwarvish</label></td>
+                  <td><label><input class="languages"type="checkbox" name="language" value="elvish">Elvish</label></td>
+                  <td><label><input class="languages"type="checkbox" name="language" value="giant">Giant</label></td>
+                </tr>
+                <tr>
+                  <td><label><input class="languages"type="checkbox" name="language" value="gnomish">Gnomish</label></td>
+                  <td><label><input class="languages"type="checkbox" name="language" value="goblin">Goblin</label></td>
+                  <td><label><input class="languages"type="checkbox" name="language" value="halfling">Halfling</label></td>
+                  <td><label><input class="languages"type="checkbox" name="language" value="orc">Orc</label></td>
+                </tr>
+                <tr>
+                  <td><label><input class="languages"type="checkbox" name="language" value="abyssal">Abyssal</label></td>
+                  <td><label><input class="languages"type="checkbox" name="language" value="celestial">Celestial</label></td>
+                  <td><label><input class="languages"type="checkbox" name="language" value="deep-speech">Deep Speech</label></td>
+                  <td><label><input class="languages"type="checkbox" name="language" value="draconic">Draconic</label></td>
+                </tr>
+                <tr>
+                  <td><label><input class="languages"type="checkbox" name="language" value="infernal">Infernal</label></td>
+                  <td><label><input class="languages"type="checkbox" name="language" value="primordial">Primordial</label></td>
+                  <td><label><input class="languages"type="checkbox" name="language" value="sylvian">Sylvian</label></td>
+                  <td><label><input class="languages"type="checkbox" name="language" value="undercommon">Undercommon</label></td>
+                </tr>
+              </table>  <br>        
+            </li>
+            <li>
+              Background: <br>
+              <select id="backgrounds">     
+                <option disabled selected value></option>        
+                <option value="acolyte">Acolyte</option>
+                <option value="charlatan">Charlatan</option>
+                <option value="criminal">Criminal</option>
+                <option value="entertainer">Entertainer</option>
+                <option value="folk-hero">Folk Hero</option>
+                <option value="guild-artisan">Guild Artisan</option>
+                <option value="hermit">Hermit</option>
+                <option value="noble">Noble</option>
+                <option value="outlander">Outlander</option>
+                <option value="sage">Sage</option>
+                <option value="sailor">Sailor</option>
+                <option value="soldier">Soldier</option>
+                <option value="urchin">Urchin</option>
+              </select><br><br>
+              <input onclick="submitForm()" type="button" value="Create">
+            </li>
+          </ol>
+        </form >
+      </div>
+      <div id="results" class="flex-box">
+        <h3>Your Character:</h3>
+        Race:<span id="race"></span><br><br>
+        Class:<span id="classr"></span><br><br>
+        Gender:<span id="gender"></span><br><br>
+        Name:<span id="name"></span><br><br>
+        Alignment:<span id="alignment"></span><br><br>
+        Age:<span id="age"></span><br><br>
+        Languages:<span id="language"></span><br><br>
+        Background:<span id="backgroundr"></span><br>
+        <p id="paragraph"></p>
+      </div>
+    </div>
+  </body>
+</html
